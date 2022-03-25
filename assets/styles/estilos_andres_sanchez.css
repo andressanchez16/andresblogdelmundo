@@ -98,7 +98,7 @@ nav>ul>li>a:hover {
 #footer_blog div:nth-child(2){
     padding: 2rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     font-size: 0.9rem;
 }
 
@@ -120,6 +120,9 @@ article>header>hgroup {
 
 article>header>hgroup>h2 {
     display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .justificado{
@@ -153,7 +156,9 @@ aside div {
     padding-right: 1rem;
 }
 
-
+a{
+    text-decoration: none;
+}
 /*aside div img {*/
     /* la imagen tendrá color de fondo blanco */
     /*background-color: #fff;*/
