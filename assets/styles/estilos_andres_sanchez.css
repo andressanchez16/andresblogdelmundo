@@ -17,10 +17,20 @@ section>header {
     grid-column: span 12;
 }
 
-section>main {
-    /* esta sección se extenderá 8 columnas. */
-    grid-column: span 8;
+@media (min-width: 1024.1px){
+    section>main{
+        grid-column: span 12;
+    }
+}
 
+section>main {
+    grid-column: span 8;
+}
+
+@media (min-width: 1024.1px){
+    section>aside{
+        grid-column: span 12;
+    }
 }
 
 section>aside {
@@ -171,6 +181,14 @@ aside div {
     align-items: center;
 }
 
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        /* despliega los elementos de microblogging uno encima del otro */
+        flex-direction: column;
+    }
+}
+
+
 .espacio {
     padding-right: 1rem;
 }
@@ -179,18 +197,6 @@ a{
     text-decoration: none;
 }
 
-@media (min-width: 1024.1px){
-    main{
-        
-        grid-column: span 12;
-    }
-}
-
-@media (min-width: 1024.1px){
-    aside{
-        grid-column: span 12;
-    }
-}
 /*aside div img {*/
     /*background-color: #fff;*/
     /*padding: 0.5rem;*/
