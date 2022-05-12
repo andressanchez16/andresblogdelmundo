@@ -176,11 +176,6 @@ aside div:nth-of-type(even){
     font-size: small;
 }
 
-aside div {
-    display: flex;
-    align-items: center;
-}
-
 @media (min-width: 1024.1px) and (max-width: 1324.1px) {
     aside div {
         /* despliega los elementos de microblogging uno encima del otro */
